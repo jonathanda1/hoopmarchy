@@ -42,11 +42,21 @@ To open the panel from a keybinding, use `omarchy-shell shell toggle jonathanda1
 - Your team is saved in `~/.local/state/omarchy/hoopmarchy.json`. Reminders already sent are tracked in `~/.local/state/omarchy/hoopmarchy-reminders.json`.
 - After updating the plugin, run `omarchy restart shell` so the new version loads.
 
-## Uninstall
+## Dependencies and permissions
+
+- **Network:** fetches JSON with `curl` from ESPN's public API (`site.api.espn.com`) only: the scoreboard every 30 seconds to 5 minutes, your team's schedule hourly, and a game's box score while it's open. Nothing is downloaded and run.
+- **Files:** writes only `~/.local/state/omarchy/hoopmarchy.json` (your team) and `~/.local/state/omarchy/hoopmarchy-reminders.json` (reminders already sent). It never edits your Omarchy config.
+- **Notifications:** sends reminders through `omarchy-notification-send`.
+- `curl` ships with Omarchy, so there's nothing extra to install.
+
+## Remove
 
 ```bash
 omarchy plugin remove jonathanda1.hoopmarchy
+rm -f ~/.local/state/omarchy/hoopmarchy.json ~/.local/state/omarchy/hoopmarchy-reminders.json
 ```
+
+The second line deletes your saved team and reminder history.
 
 ## License
 
