@@ -24,7 +24,7 @@ Item {
   // Written by the panel's team picker.
   FileView {
     id: settingsFile
-    path: root.stateDir + "/jd.nba.json"
+    path: root.stateDir + "/hoopmarchy.json"
     watchChanges: true
     printErrors: false
     onLoaded: root.team = Model.parseSettings(text()).team
@@ -35,7 +35,7 @@ Item {
   // Which reminders have gone out, so a shell restart doesn't repeat them.
   FileView {
     id: sentFile
-    path: root.stateDir + "/jd.nba-reminders.json"
+    path: root.stateDir + "/hoopmarchy-reminders.json"
     atomicWrites: true
     printErrors: false
     onLoaded: {
@@ -127,6 +127,6 @@ Item {
   }
 
   function notify(title, body) {
-    Util.execArgv(["omarchy-notification-send", "--app-name", "NBA Today", "-g", "󰠆", "-u", "normal", title, body])
+    Util.execArgv(["omarchy-notification-send", "--app-name", "Hoopmarchy", "-g", "󰠆", "-u", "normal", title, body])
   }
 }

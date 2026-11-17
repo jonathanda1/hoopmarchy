@@ -1,4 +1,4 @@
-# NBA Today for Omarchy
+# 🏀 Hoopmarchy
 
 An [Omarchy](https://omarchy.org) bar plugin that shows today's NBA games, with live scores, box scores and reminders for your team.
 
@@ -18,7 +18,7 @@ An [Omarchy](https://omarchy.org) bar plugin that shows today's NBA games, with 
 ## Install
 
 ```bash
-omarchy plugin add https://github.com/jonathanda1/omarchy-nba-today
+omarchy plugin add https://github.com/jonathanda1/hoopmarchy
 ```
 
 When asked, enable it and choose the `right` section of the bar. If the icon doesn't appear, restart the shell with `omarchy restart shell`.
@@ -33,19 +33,19 @@ When asked, enable it and choose the `right` section of the bar. If the icon doe
 | ☆ Home team | Pick your team (or None) |
 | Esc | Go back, then close the panel |
 
-To open the panel from a keybinding, use `omarchy-shell shell toggle jd.nba`.
+To open the panel from a keybinding, use `omarchy-shell shell toggle jonathanda1.hoopmarchy`.
 
 ## Notes
 
 - Scores, schedules and stats come from ESPN's public site API. This plugin isn't affiliated with ESPN or the NBA, and the API can change without notice.
 - Reminders come from the Omarchy shell on your computer, so none are sent while it's off. A missed 10 AM reminder is sent when the computer wakes up, as long as there's still more than an hour to tip-off.
-- Your team is saved in `~/.local/state/omarchy/jd.nba.json`. Reminders already sent are tracked in `~/.local/state/omarchy/jd.nba-reminders.json`.
+- Your team is saved in `~/.local/state/omarchy/hoopmarchy.json`. Reminders already sent are tracked in `~/.local/state/omarchy/hoopmarchy-reminders.json`.
 - After updating the plugin, run `omarchy restart shell` so the new version loads.
 
 ## Uninstall
 
 ```bash
-omarchy plugin remove jd.nba
+omarchy plugin remove jonathanda1.hoopmarchy
 ```
 
 ## License

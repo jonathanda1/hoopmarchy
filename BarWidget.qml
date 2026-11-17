@@ -4,7 +4,7 @@ import qs.Ui
 
 BarWidget {
   id: root
-  moduleName: "jd.nba"
+  moduleName: "jonathanda1.hoopmarchy"
 
   function injectPanel() {
     var target = panelLoader.item

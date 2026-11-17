@@ -8,8 +8,8 @@ import "Model.js" as Model
 
 Panel {
   id: root
-  moduleName: "jd.nba"
-  // Open from a keybind with: omarchy-shell shell toggle jd.nba
+  moduleName: "jonathanda1.hoopmarchy"
+  // Open from a keybind with: omarchy-shell shell toggle jonathanda1.hoopmarchy
   manageIpc: false
 
   property var anchorItem: null
@@ -25,7 +25,7 @@ Panel {
   property bool picking: false
 
   property FileView settingsFile: FileView {
-    path: Quickshell.env("HOME") + "/.local/state/omarchy/jd.nba.json"
+    path: Quickshell.env("HOME") + "/.local/state/omarchy/hoopmarchy.json"
     watchChanges: true
     atomicWrites: true
     printErrors: false
