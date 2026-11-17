@@ -1,0 +1,34 @@
+{
+  "title": "NBA Today",
+  "loading": "Loading games…",
+  "noGames": "No NBA games today",
+  "error": "Couldn't load scores",
+  "updated": "Updated %1",
+  "live": {
+    "one": "%1 live",
+    "other": "%1 live"
+  },
+  "games": {
+    "one": "%1 game",
+    "other": "%1 games"
+  },
+  "final": "Final",
+  "pickTeam": "Home team",
+  "pickTeamHint": "Pick your home team to pin its game and get reminders at 10 AM and an hour before tip-off.",
+  "noTeam": "None",
+  "vs": "vs %1",
+  "at": "@ %1",
+  "gameToday": "%1 play today",
+  "tipoffHour": "%1 tip off in 1 hour",
+  "tipoffMinutes": {
+    "one": "%1 tip off in %2 minute",
+    "other": "%1 tip off in %2 minutes"
+  },
+  "nextGame": "%1 next game",
+  "today": "Today",
+  "tomorrow": "Tomorrow",
+  "back": "Back",
+  "teamStats": "TEAM STATS",
+  "playerStats": "PLAYERS",
+  "noStatsYet": "Stats appear once the game tips off"
+}

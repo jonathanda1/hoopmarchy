@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "jd.nba",
+  "name": "NBA Today",
+  "version": "0.4.2",
+  "author": "jonathanda1",
+  "license": "MIT",
+  "description": "Today's NBA games with live scores and home-team game reminders",
+  "kinds": [
+    "bar-widget",
+    "service"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml",
+    "service": "Service.qml"
+  },
+  "barWidget": {
+    "displayName": "NBA Today",
+    "description": "Basketball icon with today's NBA scoreboard popup",
+    "category": "Info",
+    "allowMultiple": false,
+    "defaultSection": "right"
+  },
+  "homepage": "https://github.com/jonathanda1/omarchy-nba-today"
+}
